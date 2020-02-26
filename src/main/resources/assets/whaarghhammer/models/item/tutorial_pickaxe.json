@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "whaarghhammer:item/tutorial_pickaxe"
+	}
+}

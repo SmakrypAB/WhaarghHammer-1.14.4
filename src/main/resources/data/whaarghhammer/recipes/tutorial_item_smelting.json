@@ -1,0 +1,7 @@
+{
+	"type": "minecraft:smelting",
+	"ingredient": { "tag": "whaarghhammer:tutorial_ore" },
+	"result": "whaarghhammer:tutorial_item",
+	"experience": 2.3,
+	"coockingtime": 200
+}

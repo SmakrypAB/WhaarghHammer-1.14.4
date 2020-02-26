@@ -1,0 +1,20 @@
+{
+	"item.whaarghhammer.tutorial_item": "Tutorial Item",
+	
+	"item.whaarghhammer.tutorial_axe": "Tutorial Axe",
+	"item.whaarghhammer.tutorial_hoe": "Tutorial hoe",
+	"item.whaarghhammer.tutorial_pickaxe": "Tutorial Pickaxe",
+	"item.whaarghhammer.tutorial_shovel": "Tutorial Shovel",
+	"item.whaarghhammer.tutorial_sword": "Tutorial Sword",
+	
+	"item.whaarghhammer.tutorial_helmet": "Tutorial Helmet",
+	"item.whaarghhammer.tutorial_chestplate": "Tutorial Chestplate",
+	"item.whaarghhammer.tutorial_leggings": "Tutorial Leggings",
+	"item.whaarghhammer.tutorial_boots": "Tutorial Boots",
+	
+	"block.whaarghhammer.tutorial_block": "Tutorial Block",
+	
+	"block.whaarghhammer.tutorial_ore1": "Tutorial Ore1",
+	"block.whaarghhammer.tutorial_ore2": "Tutorial Ore2",
+	"block.whaarghhammer.tutorial_ore3": "Tutorial Ore3"
+}

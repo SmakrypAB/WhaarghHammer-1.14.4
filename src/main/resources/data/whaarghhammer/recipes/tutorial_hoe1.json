@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"XX",
+		"# ",
+		"# "
+	],
+	"key": {
+		"#": {
+ 			"item": "minecraft:stick"
+		},
+		"X": {
+			"item": "whaarghhammer:tutorial_item"
+		}
+	},
+	"result": {
+		"item": "whaarghhammer:tutorial_hoe"
+ 	}
+}
