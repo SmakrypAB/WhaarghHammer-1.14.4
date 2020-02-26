@@ -1,6 +1,15 @@
-public void static test 
-{
+formatting: 
+ 
+ private static void namn {
+namn: (namn på ny sak)
+}
 
-oregeneration.testytest()
-nubba
+public static namn {
+
+(vad din sak gör i detalj)
+
+NY ADDITION: [+] (ADDITION)
+BORTAGEN SAK: [-] (addition)
+fixad eller redigerad sak: [~] (edit)
+(datum)
 }
