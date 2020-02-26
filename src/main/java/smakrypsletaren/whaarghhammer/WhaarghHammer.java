@@ -33,6 +33,7 @@ import smakrypsletaren.whaarghhammer.lists.BlockList;
 import smakrypsletaren.whaarghhammer.lists.ItemList;
 import smakrypsletaren.whaarghhammer.lists.ToolMaterialList;
 import smakrypsletaren.whaarghhammer.world.OreGeneration;
+import smakrypsletaren.whaarghhammer.world.ChunkGeneration;
 
 @Mod("whaarghhammer")
 public class WhaarghHammer 
@@ -67,6 +68,10 @@ public class WhaarghHammer
 	private void clientRegistries(final FMLClientSetupEvent event) 
 	{
 		
+	}
+	
+	private static void chunkgeneration {
+		event.player.GenerateNewChunk(chunk.Calculate.ore(spread = 5));
 	}
 	
 	@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
