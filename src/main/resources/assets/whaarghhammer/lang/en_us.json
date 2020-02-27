@@ -16,5 +16,7 @@
 	
 	"block.whaarghhammer.tutorial_ore1": "Tutorial Ore1",
 	"block.whaarghhammer.tutorial_ore2": "Tutorial Ore2",
-	"block.whaarghhammer.tutorial_ore3": "Tutorial Ore3"
+	"block.whaarghhammer.tutorial_ore3": "Tutorial Ore3",
+	
+	"itemGroup.WhaarghH": "WhaarghHammer items"
 }
