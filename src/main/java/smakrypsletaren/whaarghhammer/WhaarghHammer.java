@@ -41,6 +41,8 @@ public class WhaarghHammer
 	public static final String modid = "whaarghhammer";
 	public static final Logger logger = LogManager.getLogger(modid);
 	
+	public static final ItemGroup WhaarghH = new WhaarghHammerItemGroup();
+	
 	public WhaarghHammer() 
 	{
 		instance = this;
@@ -79,21 +81,21 @@ public class WhaarghHammer
 			(
 					ItemList.tutorial_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item")),
 					
-					ItemList.tutorial_axe = new AxeItem(ToolMaterialList.tutorial, -1.0f, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_axe")),
-					ItemList.tutorial_hoe = new HoeItem(ToolMaterialList.tutorial, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_hoe")),
-					ItemList.tutorial_pickaxe = new PickaxeItem(ToolMaterialList.tutorial, -2, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_pickaxe")),
-					ItemList.tutorial_shovel = new ShovelItem(ToolMaterialList.tutorial, -1.0f, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_shovel")),
-					ItemList.tutorial_sword = new SwordItem(ToolMaterialList.tutorial, 0, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_sword")),
+					ItemList.tutorial_axe = new AxeItem(ToolMaterialList.tutorial, -1.0f, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_axe")),
+					ItemList.tutorial_hoe = new HoeItem(ToolMaterialList.tutorial, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_hoe")),
+					ItemList.tutorial_pickaxe = new PickaxeItem(ToolMaterialList.tutorial, -2, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_pickaxe")),
+					ItemList.tutorial_shovel = new ShovelItem(ToolMaterialList.tutorial, -1.0f, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_shovel")),
+					ItemList.tutorial_sword = new SwordItem(ToolMaterialList.tutorial, 0, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_sword")),
 					
-					ItemList.tutorial_helmet = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_helmet")),
-					ItemList.tutorial_chestplate = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_chestplate")),
-					ItemList.tutorial_leggings = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_leggings")),
-					ItemList.tutorial_boots = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_boots")),
+					ItemList.tutorial_helmet = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.HEAD, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_helmet")),
+					ItemList.tutorial_chestplate = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.CHEST, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_chestplate")),
+					ItemList.tutorial_leggings = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.LEGS, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_leggings")),
+					ItemList.tutorial_boots = new ArmorItem(ArmourMaterialList.tutorial, EquipmentSlotType.FEET, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_boots")),
 					
-					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.tutorial_block.getRegistryName()),
-					ItemList.tutorial_ore1 = new BlockItem(BlockList.tutorial_ore1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.tutorial_ore1.getRegistryName()),
-					ItemList.tutorial_ore2 = new BlockItem(BlockList.tutorial_ore2, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.tutorial_ore2.getRegistryName()),
-					ItemList.tutorial_ore3 = new BlockItem(BlockList.tutorial_ore3, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.tutorial_ore3.getRegistryName())
+					ItemList.tutorial_block = new BlockItem(BlockList.tutorial_block, new Item.Properties().group(WhaarghH)).setRegistryName(BlockList.tutorial_block.getRegistryName()),
+					ItemList.tutorial_ore1 = new BlockItem(BlockList.tutorial_ore1, new Item.Properties().group(WhaarghH)).setRegistryName(BlockList.tutorial_ore1.getRegistryName()),
+					ItemList.tutorial_ore2 = new BlockItem(BlockList.tutorial_ore2, new Item.Properties().group(WhaarghH)).setRegistryName(BlockList.tutorial_ore2.getRegistryName()),
+					ItemList.tutorial_ore3 = new BlockItem(BlockList.tutorial_ore3, new Item.Properties().group(WhaarghH)).setRegistryName(BlockList.tutorial_ore3.getRegistryName())
 			);
 			
 			logger.info("Items Registered.");
