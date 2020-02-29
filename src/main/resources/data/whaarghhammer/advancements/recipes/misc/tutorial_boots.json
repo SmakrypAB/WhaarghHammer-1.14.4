@@ -1,0 +1,32 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "whaarghhammer:tutorial_boots"
+        ]
+    },
+    "criteria": {
+        "has_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "whaarghhammer:tutorial_item"
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "whaarghhammer:tutorial_boots"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_ingot",
+            "has_the_recipe"
+        ]
+    ]
+}
