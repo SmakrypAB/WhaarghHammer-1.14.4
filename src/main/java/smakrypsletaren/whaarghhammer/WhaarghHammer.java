@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.entity.EntityType;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
@@ -27,9 +28,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
+import smakrypsletaren.whaarghhammer.client.render.TutorialRenderRegistries;
 import smakrypsletaren.whaarghhammer.config.Config;
 import smakrypsletaren.whaarghhammer.lists.ArmourMaterialList;
 import smakrypsletaren.whaarghhammer.lists.BlockList;
+import smakrypsletaren.whaarghhammer.lists.EntityList;
 import smakrypsletaren.whaarghhammer.lists.ItemList;
 import smakrypsletaren.whaarghhammer.lists.ToolMaterialList;
 import smakrypsletaren.whaarghhammer.world.OreGeneration;
@@ -68,7 +71,7 @@ public class WhaarghHammer
 	
 	private void clientRegistries(final FMLClientSetupEvent event) 
 	{
-		
+		TutorialRenderRegistries.registryEntityRenders();
 	}
 	
 	@Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
@@ -98,6 +101,8 @@ public class WhaarghHammer
 					ItemList.tutorial_ore3 = new BlockItem(BlockList.tutorial_ore3, new Item.Properties().group(WhaarghH)).setRegistryName(BlockList.tutorial_ore3.getRegistryName())
 			);
 			
+			EntityList.registerEntitySpawnEggs(event);
+			
 			logger.info("Items Registered.");
 		}
 		
@@ -115,10 +120,20 @@ public class WhaarghHammer
 			logger.info("Blocks Registered.");
 		}
 		
+		@SubscribeEvent
+		public static void registerEntities(final RegistryEvent.Register<EntityType<?>> event)
+		{
+			event.getRegistry().registerAll
+			(
+				EntityList.POXWALKER
+			);
+			
+			EntityList.registerEntityWorldSpawns();
+		}
+		
 		private static ResourceLocation location(String name) 
 		{
 			return new ResourceLocation(modid, name);
 		}
 	}
-	
 } 
