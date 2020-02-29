@@ -17,6 +17,8 @@ public class ItemList
 	public static Item tutorial_leggings;
 	public static Item tutorial_boots;
 	
+	public static Item poxwalker_egg;
+	
 	public static Item tutorial_block;
 	public static Item tutorial_ore1;
 	public static Item tutorial_ore2;
