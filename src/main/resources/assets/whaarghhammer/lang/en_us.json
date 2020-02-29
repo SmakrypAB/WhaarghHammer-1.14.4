@@ -12,11 +12,14 @@
 	"item.whaarghhammer.tutorial_leggings": "Tutorial Leggings",
 	"item.whaarghhammer.tutorial_boots": "Tutorial Boots",
 	
-	"block.whaarghhammer.tutorial_block": "Tutorial Block",
+	"item.whaarghhammer.poxwalker_egg": "Poxwalker Spawn Egg",
 	
+	"block.whaarghhammer.tutorial_block": "Tutorial Block",
 	"block.whaarghhammer.tutorial_ore1": "Tutorial Ore1",
 	"block.whaarghhammer.tutorial_ore2": "Tutorial Ore2",
 	"block.whaarghhammer.tutorial_ore3": "Tutorial Ore3",
+	
+	"entity.whaarghhammer.poxwalker": "Poxwalker",
 	
 	"itemGroup.WhaarghH": "WhaarghHammer items"
 }
