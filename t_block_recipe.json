@@ -1,0 +1,20 @@
+{
+"criteria": {
+    "hasIngot": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+                {
+                    "item": "whaarghhammer:tutorial_item",
+                    "count": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            ],
+        "rewards": {
+            "recipes": ["whaarghhammer:tutorial_block"]
+            }
+        }
+    }
+}}
