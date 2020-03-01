@@ -18,6 +18,7 @@ import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,11 +32,13 @@ import net.minecraftforge.fml.loading.FMLPaths;
 import smakrypsletaren.whaarghhammer.client.render.TutorialRenderRegistries;
 import smakrypsletaren.whaarghhammer.config.Config;
 import smakrypsletaren.whaarghhammer.lists.ArmourMaterialList;
+import smakrypsletaren.whaarghhammer.lists.BiomeList;
 import smakrypsletaren.whaarghhammer.lists.BlockList;
 import smakrypsletaren.whaarghhammer.lists.EntityList;
 import smakrypsletaren.whaarghhammer.lists.ItemList;
 import smakrypsletaren.whaarghhammer.lists.ToolMaterialList;
 import smakrypsletaren.whaarghhammer.world.OreGeneration;
+import smakrypsletaren.whaarghhammer.world.biomes.BloatedForrest;
 
 @Mod("whaarghhammer")
 public class WhaarghHammer 
@@ -129,6 +132,17 @@ public class WhaarghHammer
 			);
 			
 			EntityList.registerEntityWorldSpawns();
+		}
+		
+		@SubscribeEvent
+		public static void registerBiomes(final RegistryEvent.Register<Biome> event)
+		{
+			event.getRegistry().registerAll
+			(
+					BiomeList.bloated_forrest = new BloatedForrest()
+			);
+			
+			BiomeList.registerBiomes();
 		}
 		
 		private static ResourceLocation location(String name) 
