@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "whaarghhammer:tutorial_leggins"
+            "whaarghhammer:tutorial_leggings"
         ]
     },
     "criteria": {
@@ -19,7 +19,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "whaarghhammer:tutorial_leggins"
+                "recipe": "whaarghhammer:tutorial_leggings"
             }
         }
     },
