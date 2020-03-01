@@ -1,27 +1,27 @@
 {
-	"item.whaarghhammer.tutorial_item": "Tutorial Item",
+	"item.whaarghhammer.adamantium_ingot": "Adamantium Ingot",
 	
-	"item.whaarghhammer.tutorial_axe": "Tutorial Axe",
-	"item.whaarghhammer.tutorial_hoe": "Tutorial hoe",
-	"item.whaarghhammer.tutorial_pickaxe": "Tutorial Pickaxe",
-	"item.whaarghhammer.tutorial_shovel": "Tutorial Shovel",
-	"item.whaarghhammer.tutorial_sword": "Tutorial Sword",
+	"item.whaarghhammer.adamantium_axe": "Adamantium Axe",
+	"item.whaarghhammer.adamantium_hoe": "Adamantium hoe",
+	"item.whaarghhammer.adamantium_pickaxe": "Adamantium Pickaxe",
+	"item.whaarghhammer.adamantium_shovel": "Adamantium Shovel",
+	"item.whaarghhammer.adamantium_sword": "Adamantium Sword",
 	
-	"item.whaarghhammer.tutorial_helmet": "Tutorial Helmet",
-	"item.whaarghhammer.tutorial_chestplate": "Tutorial Chestplate",
-	"item.whaarghhammer.tutorial_leggings": "Tutorial Leggings",
-	"item.whaarghhammer.tutorial_boots": "Tutorial Boots",
+	"item.whaarghhammer.power_helmet": "Power Helmet",
+	"item.whaarghhammer.power_chestplate": "Power Chestplate",
+	"item.whaarghhammer.power_leggings": "Power Leggings",
+	"item.whaarghhammer.power_boots": "Power Boots",
 	
 	"item.whaarghhammer.poxwalker_egg": "Poxwalker Spawn Egg",
 	
-	"block.whaarghhammer.tutorial_block": "Tutorial Block",
-	"block.whaarghhammer.tutorial_ore1": "Tutorial Ore1",
-	"block.whaarghhammer.tutorial_ore2": "Tutorial Ore2",
-	"block.whaarghhammer.tutorial_ore3": "Tutorial Ore3",
+	"block.whaarghhammer.adamantium_block": "Adamantium Block",
+	"block.whaarghhammer.adamantium_ore1": "Adamantium Ore1",
+	"block.whaarghhammer.adamantium_ore2": "Adamantium Ore2",
+	"block.whaarghhammer.adamantium_ore3": "Adamantium Ore3",
 	
 	"entity.whaarghhammer.poxwalker": "Poxwalker",
 	
-	"itemGroup.WhaarghH": "WhaarghHammer items"
+	"itemGroup.WhaarghH": "WhaarghHammer items",
 	
 	"biome.whaarghhammer.bloated_forrest": "Bloated Forrest"
 }
