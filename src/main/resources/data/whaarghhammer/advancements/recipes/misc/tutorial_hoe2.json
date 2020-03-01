@@ -2,7 +2,7 @@
     "parent": "minecraft:recipes/root",
     "rewards": {
         "recipes": [
-            "whaarghhammer:tutorial_hoe"
+            "whaarghhammer:tutorial_hoe2"
         ]
     },
     "criteria": {
@@ -19,7 +19,7 @@
         "has_the_recipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "whaarghhammer:tutorial_hoe"
+                "recipe": "whaarghhammer:tutorial_hoe2"
             }
         }
     },
