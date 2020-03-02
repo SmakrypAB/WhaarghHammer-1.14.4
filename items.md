@@ -9,7 +9,13 @@ ___
 # adamantium ingot 
 
 ## HOW TO GET: 
-mine adamantium ore (found in the overworld, the nether and end)
+smelt adamantium ore (found in the overworld, the nether and end)
+
+<img src="https://cdn.discordapp.com/attachments/390208204984025088/684100817552408619/unknown.png"> <img src="https://media.discordapp.net/attachments/390208204984025088/684097878666510358/unknown.png"> <img src="https://cdn.discordapp.com/attachments/390208204984025088/684098191255404562/unknown.png">
+
+de-craft adamantium block
+
+<img src="https://cdn.discordapp.com/attachments/390208204984025088/684096612523573269/unknown.png" alt="adamantium ingot crafting">
 
 ### item texture:  
 [file link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/lists/ItemList.java#L7)
@@ -27,6 +33,20 @@ ItemList.adamantium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)
 ```json
 "item.whaarghhammer.adamantium_ingot": "adamantium ingot",
 ```
+### recipe [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/tutorial_item_crafting.json)
+```json
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{ "item": "whaarghhammer:tutorial_block" }
+	],
+	"result": {
+		"item": "whaarghhammer:tutorial_item",
+		"count": 9
+ 	}
+}
+```
+
 ## items that use adamantium ingot in crafting:
 ### tools: 
 |  TOOL | INGOTS NEEDED |
@@ -74,7 +94,66 @@ place 2 adamantium ingots over a stick in the crafting table
 
 ### recipe link
 
-[link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/adamantium_sword.json)
+[recipe link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/adamantium_sword.json)
+
+```json
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"X",
+		"X",
+		"#"
+	],
+	"key": {
+		"#": {
+ 			"item": "minecraft:stick"
+		},
+		"X": {
+			"item": "whaarghhammer:adamantium_ingot"
+		}
+	},
+	"result": {
+		"item": "whaarghhammer:adamantium_sword"
+ 	}
+}
+```
+
+[recipe advancement link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/advancements/recipes/misc/tutorial_sword.json)
+
+```json
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "whaarghhammer:tutorial_sword"
+        ]
+    },
+    "criteria": {
+        "has_ingot": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "whaarghhammer:tutorial_item"
+                    }
+                ]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "whaarghhammer:tutorial_sword"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_ingot",
+            "has_the_recipe"
+        ]
+    ]
+}
+```
 
 ## Atributes:
 
@@ -84,19 +163,5 @@ place 2 adamantium ingots over a stick in the crafting table
 | attack speed | 10 |
 | durability | 1600 |
 
-
 ___
 
-tutorial_axe = 
-tutorial_hoe = 
-tutorial_pickaxe = 
-tutorial_shovel = 
-tutorial_helmet = 
-tutorial_chestplate = 
-tutorial_leggings = 
-tutorial_boots	=
-poxwalker_egg	= 
-tutorial_block =
-tutorial_ore1 = 
-tutorial_ore2 = 
-tutorial_ore3 = 
