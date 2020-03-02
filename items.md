@@ -211,5 +211,31 @@ place 2 adamantium ingots over a stick in the crafting table
 | enchantability | 25  |
 | repair item | adamantium ingot | 
 
+<details>
+<summary>view attributes code (simplified)</summary>
+<p>
+
+```java
+public enum ToolMaterialList implements IItemTier
+{
+	tutorial(10.0f, 9.0f, 1600, 3, 25, ItemList.tutorial_item);
+	
+	private float attackDamage, efficiency;
+	private int durability, harvestLevel, enchantability;
+	private Item repairMaterial;
+	
+	private ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial) 
+	{
+		this.attackDamage = attackDamage;
+		this.efficiency = efficiency;
+		this.durability = durability;
+		this.harvestLevel = harvestLevel;
+		this.enchantability = enchantability;
+		this.repairMaterial = repairMaterial;
+	}
+```
+
+</p>
+</details>
 ___
 
