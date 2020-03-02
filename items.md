@@ -201,7 +201,6 @@ place 2 adamantium ingots over a stick in the crafting table
 </details>
 
 ## Atributes:
-
 |  attribute | value |
 | ------------- |:-------------:|
 | attack damage | 11 |
@@ -211,21 +210,26 @@ place 2 adamantium ingots over a stick in the crafting table
 | enchantability | 25  |
 | repair item | adamantium ingot | 
 
+[tool material list (master for attributes)](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/java/smakrypsletaren/whaarghhammer/lists/ToolMaterialList.java)
+
 <details>
 <summary>view attributes code (simplified)</summary>
 <p>
 
 ```java
+
 public enum ToolMaterialList implements IItemTier
 {
+ // these values (10.0f, 9.0f, 1600, 3, 25,) are constant values
 	tutorial(10.0f, 9.0f, 1600, 3, 25, ItemList.tutorial_item);
-	
+  // here the defined values get used in order of what value was written first and gets put into a variable
 	private float attackDamage, efficiency;
 	private int durability, harvestLevel, enchantability;
 	private Item repairMaterial;
 	
 	private ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial) 
 	{
+  // the variables get turned into @override readable values that will replace the source code
 		this.attackDamage = attackDamage;
 		this.efficiency = efficiency;
 		this.durability = durability;
@@ -235,7 +239,9 @@ public enum ToolMaterialList implements IItemTier
 	}
 ```
 
+```java
+ItemList.tutorial_sword = new SwordItem(ToolMaterialList.tutorial, 0, 6.0f, new Item.Properties().group(WhaarghH)).setRegistryName(location("tutorial_sword")),
+```
+
 </p>
 </details>
-___
-
