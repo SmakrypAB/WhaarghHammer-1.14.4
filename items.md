@@ -26,14 +26,37 @@ de-craft adamantium block
 ### main register: 
 
 [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/WhaarghHammer.java#L85)
-```js
+
+<details>
+<summary>click to view registry code</summary>
+<p>
+
+```java
 ItemList.adamantium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("adamantium_ingot")),
 ```
+</p>
+</details>
+
 ### lang file: [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/resources/assets/whaarghhammer/lang/en_us.json#L2)
+
+<details>
+<summary>click to view lang file code</summary>
+<p>
+
 ```json
 "item.whaarghhammer.adamantium_ingot": "adamantium ingot",
 ```
+
+</p>
+</details>
+
+
 ### recipe [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/tutorial_item_crafting.json)
+
+<details>
+<summary>click to view recipe code</summary>
+<p>
+
 ```json
 {
 	"type": "minecraft:crafting_shapeless",
@@ -46,6 +69,10 @@ ItemList.adamantium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)
  	}
 }
 ```
+
+</p>
+</details>
+
 
 ## items that use adamantium ingot in crafting:
 ### tools: 
@@ -92,9 +119,18 @@ place 2 adamantium ingots over a stick in the crafting table
 
 [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/445bb9d78873a7919067a13e5e98c70dc85981f3/src/main/java/smakrypsletaren/whaarghhammer/WhaarghHammer.java#L94)
 
+### itemlist
+
+[link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/dfba025200b4dbf5bd9bce26412028bca9ef915f/src/main/java/smakrypsletaren/whaarghhammer/lists/ItemList.java#L9)
+
 ### recipe link
 
 [recipe link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/adamantium_sword.json)
+
+
+<details>
+<summary>click to view recipe code</summary>
+<p>
 
 ```json
 {
@@ -117,8 +153,15 @@ place 2 adamantium ingots over a stick in the crafting table
  	}
 }
 ```
+</details>
+</p>
 
 [recipe advancement link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/advancements/recipes/misc/tutorial_sword.json)
+
+<details>
+<summary>click to view recipe advancement code</summary>
+<p>
+
 
 ```json
 {
@@ -154,6 +197,8 @@ place 2 adamantium ingots over a stick in the crafting table
     ]
 }
 ```
+</p>
+</details>
 
 ## Atributes:
 
@@ -162,6 +207,9 @@ place 2 adamantium ingots over a stick in the crafting table
 | attack damage | 11 |
 | attack speed | 10 |
 | durability | 1600 |
+| harvest level | 3 |
+| enchantability | 25  |
+| repair item | adamantium ingot | 
 
 ___
 
