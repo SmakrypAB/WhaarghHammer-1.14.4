@@ -1,21 +1,29 @@
+___
 # items: 	
 
 ### table of contents:
-[adamantium_ingot](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/unfinnished-code/items.md#adamantium_ingot)
-___
-# adamantium_ingot 
+[**adamantium_ingot**](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/unfinnished-code/items.md#adamantium_ingot)
 
-item texture:  
+[**adamantium_sword**](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/unfinnished-code/items.md#adamantium-sword)
+___
+# adamantium ingot 
+
+## HOW TO GET: 
+mine adamantium ore (found in the overworld, the nether and end)
+
+### item texture:  
 [file link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/lists/ItemList.java#L7)
 
 
 <img src="https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/assets/whaarghhammer/textures/item/adamantium_ingot.png" alt="adamantium ingot" height="30" width="30"/>
 
-main register: [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/WhaarghHammer.java#L85)
+### main register: 
+
+[link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/WhaarghHammer.java#L85)
 ```js
 ItemList.adamantium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("adamantium_ingot")),
 ```
-lang file: [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/resources/assets/whaarghhammer/lang/en_us.json#L2)
+### lang file: [link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/resources/assets/whaarghhammer/lang/en_us.json#L2)
 ```json
 "item.whaarghhammer.adamantium_ingot": "adamantium ingot",
 ```
@@ -47,7 +55,37 @@ adamantium block
 ___
 # adamantium sword
 
+## how to get:
+place 2 adamantium ingots over a stick in the crafting table
 
+## crafting: 
+
+<img src="https://cdn.discordapp.com/attachments/390208204984025088/684093543366524982/unknown.png" alt="adamantium sword crafting">
+
+### item texture:  
+[file link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/41874cc925adf76cfffc23f0f1af09dd814beb78/src/main/java/smakrypsletaren/whaarghhammer/lists/ItemList.java#L7)
+
+
+<img src="https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/assets/whaarghhammer/textures/item/adamantium_sword.png" alt="adamantium sword" height="30" width="30"/>
+
+### main register:
+
+[link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/445bb9d78873a7919067a13e5e98c70dc85981f3/src/main/java/smakrypsletaren/whaarghhammer/WhaarghHammer.java#L94)
+
+### recipe link
+
+[link](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/resources/data/whaarghhammer/recipes/adamantium_sword.json)
+
+## Atributes:
+
+|  attribute | value |
+| ------------- |:-------------:|
+| attack damage | 11 |
+| attack speed | 10 |
+| durability | 1600 |
+
+
+___
 
 tutorial_axe = 
 tutorial_hoe = 
