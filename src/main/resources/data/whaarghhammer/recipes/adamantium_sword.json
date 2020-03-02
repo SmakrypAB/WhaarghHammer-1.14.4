@@ -10,10 +10,10 @@
  			"item": "minecraft:stick"
 		},
 		"X": {
-			"item": "whaarghhammer:tutorial_item"
+			"item": "whaarghhammer:adamantium_ingot"
 		}
 	},
 	"result": {
-		"item": "whaarghhammer:tutorial_sword"
+		"item": "whaarghhammer:adamantium_sword"
  	}
 }
