@@ -201,6 +201,9 @@ place 2 adamantium ingots over a stick in the crafting table
 </details>
 
 ## Atributes:
+<details>
+<summary>view attributes</summary>
+<p>
 |  attribute | value |
 | ------------- |:-------------:|
 | attack damage | 11 |
@@ -209,7 +212,8 @@ place 2 adamantium ingots over a stick in the crafting table
 | harvest level | 3 |
 | enchantability | 25  |
 | repair item | adamantium ingot | 
-
+</p>
+</details>
 [tool material list (master for attributes)](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/java/smakrypsletaren/whaarghhammer/lists/ToolMaterialList.java)
 
 <details>
