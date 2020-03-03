@@ -214,6 +214,7 @@ place 2 adamantium ingots over a stick in the crafting table
 | repair item | adamantium ingot | 
 </p>
 </details>
+
 [tool material list (master for attributes)](https://github.com/SmakrypAB/WhaarghHammer-1.14.4/blob/master/src/main/java/smakrypsletaren/whaarghhammer/lists/ToolMaterialList.java)
 
 <details>
